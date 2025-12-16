@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Space Grotesk", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #f5f7ff;
+  background-color: #05010a;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(114, 254, 195, 0.18), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(91, 141, 239, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(251, 124, 116, 0.15), transparent 40%),
+    #05010a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(18px);
+}
+
+.token-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(91, 141, 239, 0.8) transparent;
+}
+
+.token-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.token-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.token-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(114, 254, 195, 0.7), rgba(91, 141, 239, 0.7));
+  border-radius: 999px;
+}
+
+.token-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(114, 254, 195, 0.9), rgba(91, 141, 239, 0.9));
+}
